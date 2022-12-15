@@ -7,7 +7,145 @@
 		<link rel="stylesheet" href="/src/style.css" />
 	</head>
 	<body>
-		<p class="text-red-400">hello!</p>
+		<div class="w-screen h-screen flex justify-center items-center">
+			<form
+				id="form"
+				class="w-1/3 h-2/3 bg-slate-400 flex flex-col justify-around items-center"
+			>
+				<!-- any input fields inside the form can be submitted *together* -->
+				<!-- any button with the attribute "type" equal to "submit" -->
+				<!-- the default behavior of the browser when a form is submitted is to refresh the page -->
+
+				<!-- input tags are self closing -->
+				<input
+					type="text"
+					name="first-name"
+					placeholder="First Name"
+					required
+				/>
+
+				<input
+					type="text"
+					name="last-name"
+					placeholder="Last Name"
+					required
+				/>
+
+				<!-- like a switch; either checked or not checked -->
+				<div class="flex flex-col justify-center items-center">
+					Clothes
+					<fieldset name="clothing">
+						<label for="checkbox1">
+							<input
+								id="checkbox1"
+								type="checkbox"
+								checked
+								value="shoes"
+							/>
+							Shoes
+						</label>
+
+						<label for="checkbox2">
+							<input
+								id="checkbox2"
+								type="checkbox"
+								checked
+								value="shoes"
+							/>
+							Pants
+						</label>
+
+						<label for="checkbox3">
+							<input
+								id="checkbox3"
+								type="checkbox"
+								checked
+								value="shirt"
+							/>
+							Shirt
+						</label>
+					</fieldset>
+				</div>
+
+				<!-- fieldset allows us to group specific types of inputs together -->
+				<fieldset class="flex flex-col" name="fruit">
+					<p>Choose one fruit:</p>
+
+					<label class="flex gap-4" for="fruit1">
+						<input
+							type="radio"
+							value="pear"
+							name="fruit"
+							id="fruit1"
+						/>
+						Pear
+					</label>
+
+					<label class="flex gap-4" for="fruit2">
+						<input
+							type="radio"
+							value="apple"
+							name="fruit"
+							id="fruit2"
+						/>
+						Apple
+					</label>
+
+					<label class="flex gap-4" for="fruit3">
+						<input
+							type="radio"
+							value="orange"
+							name="fruit"
+							id="fruit3"
+						/>
+						Orange
+					</label>
+				</fieldset>
+
+				<!-- just like text input, but the input is hidden -->
+				<input
+					name="password"
+					required
+					type="password"
+					placeholder="Password"
+					minlength="4"
+					maxlength="16"
+				/>
+
+				<!-- this type of input gets validated by browser on submit -->
+				<input
+					name="email"
+					type="email"
+					placeholder="Email Address"
+					required
+				/>
+
+				<fieldset>
+					<label for="age">Age:</label>
+					<input
+						name="age"
+						type="number"
+						max="120"
+						min="18"
+						id="age"
+					/>
+				</fieldset>
+
+				<fieldset>
+					<label for="city-select">Choose a city:</label>
+					<select name="city" id="city-select">
+						<option value="dallas">Dallas</option>
+						<option value="berlin">Berlin</option>
+						<option value="paris">Paris</option>
+						<option value="cairo">Cairo</option>
+					</select>
+				</fieldset>
+
+				<button type="submit" class="bg-blue-600 rounded-md p-4">
+					Submit Form
+				</button>
+			</form>
+		</div>
 		<script type="module" src="/src/main.ts"></script>
 	</body>
 </html>
