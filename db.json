@@ -1,3 +1,34 @@
 {
-	"users": []
+  "users": [
+    {
+      "first-name": "franz",
+      "last-name": "franz",
+      "clothes": [
+        "shoes",
+        "pants",
+        "shirt"
+      ],
+      "fruit": "pear",
+      "password": "123456",
+      "email": "test@test.com",
+      "age": "66",
+      "city": "dallas",
+      "id": 1
+    },
+    {
+      "first-name": "franz",
+      "last-name": "franz",
+      "clothes": [
+        "shoes",
+        "pants",
+        "shirt"
+      ],
+      "fruit": "pear",
+      "password": "123456",
+      "email": "test@test.com",
+      "age": "66",
+      "city": "dallas",
+      "id": 2
+    }
+  ]
 }

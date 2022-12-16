@@ -32,43 +32,44 @@
 				/>
 
 				<!-- like a switch; either checked or not checked -->
-				<div class="flex flex-col justify-center items-center">
-					Clothes
-					<fieldset name="clothing">
-						<label for="checkbox1">
-							<input
-								id="checkbox1"
-								type="checkbox"
-								checked
-								value="shoes"
-							/>
-							Shoes
-						</label>
+				<fieldset>
+					<legend>Clothes</legend>
+					<label for="checkbox1">
+						<input
+							name="clothes"
+							id="checkbox1"
+							type="checkbox"
+							checked
+							value="shoes"
+						/>
+						Shoes
+					</label>
 
-						<label for="checkbox2">
-							<input
-								id="checkbox2"
-								type="checkbox"
-								checked
-								value="shoes"
-							/>
-							Pants
-						</label>
+					<label for="checkbox2">
+						<input
+							name="clothes"
+							id="checkbox2"
+							type="checkbox"
+							checked
+							value="pants"
+						/>
+						Pants
+					</label>
 
-						<label for="checkbox3">
-							<input
-								id="checkbox3"
-								type="checkbox"
-								checked
-								value="shirt"
-							/>
-							Shirt
-						</label>
-					</fieldset>
-				</div>
+					<label for="checkbox3">
+						<input
+							name="clothes"
+							id="checkbox3"
+							type="checkbox"
+							checked
+							value="shirt"
+						/>
+						Shirt
+					</label>
+				</fieldset>
 
 				<!-- fieldset allows us to group specific types of inputs together -->
-				<fieldset class="flex flex-col" name="fruit">
+				<fieldset class="flex flex-col">
 					<p>Choose one fruit:</p>
 
 					<label class="flex gap-4" for="fruit1">
